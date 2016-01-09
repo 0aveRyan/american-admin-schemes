@@ -8,9 +8,9 @@ Six Color Schemes sourced from the official United States Web Design Standards a
 == Description ==
 Six Color Schemes sourced from the official United States Web Design Standards and NASA brand guides.
 
-The United States Web Design Standards were developed by 18F and the U.S. Digital Service.
+The United States Web Design Standards were developed by 18F and the United States Digital Service.
 
-While these admin schemes strive to maintain the Web Design Standard\'s 508 compliancy (highly visually-accessible), due to hover states and default Admin styles they aren\'t 100 percent compliant.
+While these admin schemes strive to maintain the US Web Design Standard's 508 compliancy (highly visually-accessible), due to hover states and default Admin styles they aren't 100 percent compliant.
 
 == Installation ==
 1. Install via WordPress Admin or download .ZIP and upload manually.
