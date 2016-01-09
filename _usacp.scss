@@ -1,0 +1,47 @@
+// Color
+$usacp-primary:              #0071bc;
+$usacp-primary-darker:       #205493;
+$usacp-primary-darkest:      #112e51;
+
+$usacp-primary-alt:          #02bfe7;
+$usacp-primary-alt-dark:     #00a6d2;
+$usacp-primary-alt-darkest:  #046b99;
+$usacp-primary-alt-light:    #9bdaf1; // lighten($usacp-primary-alt, 60%)
+$usacp-primary-alt-lightest: #e1f3f8; // lighten($usacp-primary-alt, 90%)
+
+$usacp-secondary:            #e31c3d;
+$usacp-secondary-dark:       #cd2026;
+$usacp-secondary-darkest:    #981b1e;
+$usacp-secondary-light:      #e59393; // lighten($usacp-secondary, 60%)
+$usacp-secondary-lightest:   #f9dede; // lighten($usacp-secondary, 90%)
+
+$usacp-white:                #ffffff;
+$usacp-base:                 #212121;
+
+$usacp-gray-dark:            #323a45;
+$usacp-gray:                 #5b616b; // lighten($usacp-gray-dark, 20%)
+$usacp-gray-light:           #aeb0b5; // lighten($usacp-gray-dark, 60%)
+$usacp-gray-lighter:         #d6d7d9; // lighten($usacp-gray-dark, 80%)
+$usacp-gray-lightest:        #f1f1f1; // lighten($usacp-gray-dark, 91%)
+
+$usacp-gray-warm-dark:       #494440;
+$usacp-gray-warm-light:      #e4e2e0; // lighten($usacp-gray-warm-dark, 90%)
+$usacp-gray-cool-light:      #dce4ef; // lighten($usacp-primary, 90%)
+
+$usacp-gold:                 #fdb81e;
+$usacp-gold-light:           #f9c642; //  lighten($usacp-gold, 20%)
+$usacp-gold-lighter:         #fad980; //  lighten($usacp-gold, 60%)
+$usacp-gold-lightest:        #fff1d2; //  lighten($usacp-gold, 83%)
+
+$usacp-green:                #2e8540;
+$usacp-green-light:          #4aa564; // lighten($usacp-green, 20%)
+$usacp-green-lighter:        #94bfa2; // lighten($usacp-green, 60%)
+$usacp-green-lightest:       #e7f4e4; // lighten($usacp-green, 60%)
+
+$usacp-cool-blue:            #205493;
+$usacp-cool-blue-light:      #4773aa; // lighten($usacp-cool-blue, 20%)
+$usacp-cool-blue-lighter:    #8ba6ca; // lighten($usacp-cool-blue, 60%)
+$usacp-cool-blue-lightest:   #dce4ef; // lighten($usacp-cool-blue, 90%)
+
+$usacp-focus:                #3e94cf;
+$usacp-visited:              #4c2c92;

@@ -1,0 +1,57 @@
+$base-color: #827d6e;
+$highlight-color: #d22841;
+$notification-color: #fff;
+$action-color: #000;
+
+$menu-text: #fff;
+$menu-focus-text: #fff;
+$menu-submenu-background: $highlight-color;
+$menu-submenu-current-text: #fff;
+$menu-submenu-focus-text: #fff;
+$menu-submenu-text: #fff;
+$menu-collapse-text: #fff;
+
+$menu-bubble-text: #000;
+$menu-bubble-current-background: #fff;
+$menu-bubble-current-text: #000;
+
+@import "../admin";
+
+/* Comment Count Bubble in Post List */
+.column-comments .post-com-count-pending,
+.column-response .post-com-count-pending {
+  background-color: $highlight-color;
+}
+
+/* HELP, PLUGIN and COMMENT LISTS */
+#contextual-help-back {
+  background-color: lighten(#827d6e, 33%);
+}
+
+.contextual-help-tabs .active,
+.plugins .active th.check-column {
+  border-left-color: #827d6e;
+}
+
+#activity-widget #the-comment-list .unapproved:before {
+  background: #d22841;
+}
+
+#the-comment-list .unapproved th.check-column  {
+  border-left-color: #d22841;
+}
+
+#activity-widget #the-comment-list .unapproved,
+#the-comment-list .unapproved td, #the-comment-list .unapproved th {
+  background-color: lighten( #d22841, 33% );
+}
+
+.contextual-help-tabs .active a,
+.plugins .active td,
+.plugins .active th {
+  background-color: lighten( #827d6e, 33% );
+}
+
+span.post-state {
+  color: #d22841;
+}

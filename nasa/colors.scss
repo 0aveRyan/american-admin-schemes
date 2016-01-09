@@ -1,0 +1,41 @@
+$base-color: #000;
+$highlight-color: #0B3D91;
+$notification-color: #FC3D21;
+$action-color: #79797C;
+
+$menu-submenu-background: lighten($base-color, 15%);
+$menu-submenu-text: #fff;
+$menu-focus-text: darken($notification-color, 5%);
+$menu-submenu-focus-text: darken($notification-color, 5%);
+
+$menu-bubble-current-background: $notification-color;
+
+@import "../admin";
+
+.wp-core-ui .button-primary:hover {
+  color: lighten($notification-color, 7.5%);
+}
+
+/* ADMIN BAR ICON FIX */
+#wp-toolbar a.ab-item:hover,
+#wp-toolbar li.hover a.ab-item {
+  .ab-icon:before,
+  .ab-icon:after {
+    color: $notification-color !important;
+  }
+}
+
+/* SPECIAL site-name SNOWFLAKE FIX */
+#wp-toolbar #wp-admin-bar-site-name a:hover,
+#wp-toolbar #wp-admin-bar-site-name.hover a {
+  &:before,
+  &:after {
+    color: $notification-color !important;
+  }
+}
+
+/* Comment Count Bubble in Post List */
+.column-comments .post-com-count-pending,
+.column-response .post-com-count-pending {
+  background-color: $notification-color;
+}

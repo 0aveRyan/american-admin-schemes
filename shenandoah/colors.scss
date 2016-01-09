@@ -1,0 +1,107 @@
+@import "../usacp";
+
+$base-color: $usacp-gray-warm-dark;
+$body-background: $usacp-gray-warm-light;
+
+$link: $usacp-primary-alt-darkest;
+$link-focus: $usacp-primary-alt-dark;
+
+$highlight-color: $usacp-green;
+$notification-color: $usacp-green;
+
+$menu-submenu-background: $usacp-green-light;
+$menu-submenu-text: $usacp-base;
+$menu-submenu-current-text: $usacp-base;
+$menu-submenu-focus-text: $usacp-base;
+$menu-bubble-current-background: $usacp-green-light;
+
+@import "../admin";
+
+#wpadminbar #wp-admin-bar-user-info .display-name {
+  color: $menu-submenu-text !important;
+  font-weight: 700;
+}
+
+/* ADMIN BAR ICON FIX */
+#wp-toolbar a.ab-item:hover,
+#wp-toolbar li.hover a.ab-item {
+  .ab-icon:before,
+  .ab-icon:after {
+    color: $menu-submenu-text !important;
+  }
+}
+
+/* SPECIAL site-name SNOWFLAKE FIX */
+#wp-toolbar #wp-admin-bar-site-name a:hover,
+#wp-toolbar #wp-admin-bar-site-name.hover a {
+  &:before,
+  &:after {
+    color: $menu-submenu-text !important;
+  }
+}
+
+/* Page Title Action Butt0ns */
+.wrap .page-title-action {
+  background: $usacp-gray-lighter;
+  color: $usacp-base;
+}
+
+/* Comment Count Bubble in Post List */
+.column-comments .post-com-count-pending,
+.column-response .post-com-count-pending {
+  background-color: $highlight-color;
+}
+
+/* Fix Editor Background Color */
+#wp-content-editor-tools {
+  background-color: $usacp-gray-warm-light;
+}
+
+/* Fix Menupop Background Color */
+#wpadminbar .quicklinks .menupop ul.ab-sub-secondary,
+#wpadminbar .quicklinks .menupop ul.ab-sub-secondary .ab-submenu,
+.theme-browser .theme .theme-installed {
+  background-color: $usacp-green;
+  .ab-item {
+    color: $usacp-white;
+  }
+}
+
+/* CUSTOMIZER YO */
+.wp-full-overlay-sidebar,
+.customize-controls-close {
+  background-color: $usacp-gray-warm-light;
+}
+
+#customize-preview.wp-full-overlay-main {
+  background-color: $usacp-gray-lightest;
+}
+
+/* HELP, PLUGIN and COMMENT LISTS */
+#contextual-help-back {
+  background-color: $usacp-green-lightest;
+}
+
+.contextual-help-tabs .active,
+.plugins .active th.check-column {
+  border-left-color: $usacp-green;
+}
+
+#activity-widget #the-comment-list .unapproved:before {
+  background: $usacp-secondary-darkest;
+}
+
+#the-comment-list .unapproved th.check-column  {
+  border-left-color: $usacp-secondary-darkest;
+}
+
+#activity-widget #the-comment-list .unapproved,
+#the-comment-list .unapproved td, #the-comment-list .unapproved th {
+  background-color: lighten( $usacp-secondary-lightest, 2.5% );
+}
+
+.contextual-help-tabs .active a,
+.plugins .active td,
+.plugins .active th {
+  background-color: $usacp-green-lightest;
+}

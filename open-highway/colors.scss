@@ -1,0 +1,71 @@
+@import "../usacp";
+
+$base-color: $usacp-gray-dark;
+$body-background: $usacp-gray-lightest;
+
+$link: $usacp-primary-darker;
+$link-focus: $usacp-primary;
+
+$highlight-color: $usacp-gray;
+$notification-color: $usacp-base;
+
+$menu-submenu-background: $usacp-gray;
+$menu-submenu-text: $usacp-white;
+$menu-submenu-current-text: $usacp-white;
+$menu-submenu-focus-text: $usacp-gold;
+$menu-highlight-icon: $usacp-gold;
+$menu-bubble-text: $usacp-base;
+$menu-bubble-background: $usacp-gray-lightest;
+$menu-bubble-current-text: $usacp-base;
+$menu-bubble-current-background: $usacp-gold;
+
+@import "../admin";
+
+#wpadminbar:not(.mobile) .ab-top-menu > li:hover > .ab-item,
+#wpadminbar:not(.mobile) .ab-top-menu > li > .ab-item:focus,
+#wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus,
+#wpadminbar.nojs .ab-top-menu > li.menupop:hover > .ab-item,
+#wpadminbar .ab-top-menu > li.menupop.hover > .ab-item {
+  background: $usacp-gray;
+}
+
+#wpadminbar .quicklinks .menupop ul.ab-sub-secondary li a,
+#wpadminbar .quicklinks .menupop ul.ab-sub-secondary .ab-submenu li a {
+  color: $usacp-white;
+}
+
+/* Comment Count Bubble in Post List */
+.column-comments .post-com-count-pending,
+.column-response .post-com-count-pending {
+  background-color: $usacp-gold;
+  color: $usacp-base;
+}
+
+/* HELP, PLUGIN and COMMENT LISTS */
+#contextual-help-back {
+  background-color: $usacp-gold-lightest;
+}
+
+.contextual-help-tabs .active,
+.plugins .active th.check-column {
+  border-left-color: $usacp-gold;
+}
+
+#activity-widget #the-comment-list .unapproved:before {
+  background: $usacp-secondary-darkest;
+}
+
+#the-comment-list .unapproved th.check-column  {
+  border-left-color: $usacp-secondary-darkest;
+}
+
+#activity-widget #the-comment-list .unapproved,
+#the-comment-list .unapproved td, #the-comment-list .unapproved th {
+  background-color: lighten( $usacp-secondary-lightest, 2.5% );
+}
+
+.contextual-help-tabs .active a,
+.plugins .active td,
+.plugins .active th {
+  background-color: $usacp-gold-lightest;
+}

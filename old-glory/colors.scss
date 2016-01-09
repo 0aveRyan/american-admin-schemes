@@ -1,0 +1,76 @@
+@import "../usacp";
+
+$base-color: $usacp-primary-darkest;
+$body-background: $usacp-gray-lightest;
+
+$link: $usacp-primary-alt-darkest;
+$link-focus: $usacp-primary-alt-dark;
+
+$highlight-color: $usacp-primary;
+$notification-color: $usacp-secondary-dark;
+$button-color: $usacp-secondary-dark;
+$form-checked: $usacp-primary-darkest;;
+
+$menu-submenu-background: $usacp-cool-blue;
+$menu-submenu-text: $usacp-gray-lightest;
+$menu-submenu-focus-text: $usacp-primary-alt-light;
+$menu-bubble-current-background: $usacp-secondary-dark;
+
+@import "../admin";
+
+/* ADMIN BAR ICON FIX */
+#wp-toolbar a.ab-item:hover,
+#wp-toolbar li.hover a.ab-item {
+  .ab-icon:before,
+  .ab-icon:after {
+    color: $usacp-primary-alt-light !important;
+  }
+}
+
+/* SPECIAL site-name SNOWFLAKE FIX */
+#wp-toolbar #wp-admin-bar-site-name a:hover,
+#wp-toolbar #wp-admin-bar-site-name.hover a {
+  &:before,
+  &:after {
+    color: $usacp-primary-alt-light !important;
+  }
+}
+
+/* Comment Count Bubble in Post List */
+.column-comments .post-com-count-pending,
+.column-response .post-com-count-pending {
+  background-color: $highlight-color;
+}
+
+/* HELP, PLUGIN and COMMENT LISTS */
+#contextual-help-back {
+  background-color: $usacp-primary-alt-lightest;
+}
+
+.contextual-help-tabs .active,
+.plugins .active th.check-column {
+  border-left-color: $usacp-primary-alt-darkest;
+}
+
+#activity-widget #the-comment-list .unapproved:before {
+  background: $usacp-secondary-darkest;
+}
+
+#the-comment-list .unapproved th.check-column  {
+  border-left-color: $usacp-secondary-darkest;
+}
+
+#activity-widget #the-comment-list .unapproved,
+#the-comment-list .unapproved td, #the-comment-list .unapproved th {
+  background-color: lighten( $usacp-secondary-lightest, 2.5% );
+}
+
+.contextual-help-tabs .active a,
+.plugins .active td,
+.plugins .active th {
+  background-color: $usacp-primary-alt-lightest;
+}
+
+span.post-state {
+  color: $usacp-secondary-darkest;
+}
